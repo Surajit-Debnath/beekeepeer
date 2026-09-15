@@ -1,0 +1,33 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test",
+    "test:e2e": "node scripts/e2eSmoke.js",
+    "dev": "nodemon server.js",
+    "db:migrate": "node scripts/migrateDatabase.js",
+    "db:sync": "node scripts/syncBlockchain.js",
+    "db:rebuild": "node scripts/rebuildDatabase.js --confirm",
+    "local:up": "node scripts/localUp.js",
+    "local:down": "node scripts/localDown.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "ethers": "^6.17.0",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.10.0",
+    "multer": "^2.3.0",
+    "nodemon": "^3.1.14",
+    "qrcode": "^1.5.4"
+  }
+}
